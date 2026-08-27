@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "user-service",
       script: "java",
-      args: "-Dspring.classformat.ignore=true -jar user-service/target/user-service-1.0.0-SNAPSHOT.jar",
+      args: "-Dspring.classformat.ignore=true -Deureka.instance.prefer-ip-address=true -jar user-service/target/user-service-1.0.0-SNAPSHOT.jar",
       autorestart: true,
       watch: false,
       max_memory_restart: "768M",
@@ -14,7 +14,7 @@ module.exports = {
     {
       name: "product-service",
       script: "java",
-      args: "-Dspring.classformat.ignore=true -jar product-service/target/product-service-1.0.0-SNAPSHOT.jar",
+      args: "-Dspring.classformat.ignore=true -Deureka.instance.prefer-ip-address=true -jar product-service/target/product-service-1.0.0-SNAPSHOT.jar",
       autorestart: true,
       watch: false,
       max_memory_restart: "768M",
@@ -25,7 +25,7 @@ module.exports = {
     {
       name: "order-service",
       script: "java",
-      args: "-Dspring.classformat.ignore=true -jar order-service/target/order-service-1.0.0-SNAPSHOT.jar",
+      args: "-Dspring.classformat.ignore=true -Deureka.instance.prefer-ip-address=true -jar order-service/target/order-service-1.0.0-SNAPSHOT.jar",
       autorestart: true,
       watch: false,
       max_memory_restart: "768M",
