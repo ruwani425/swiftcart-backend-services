@@ -2,6 +2,7 @@ module.exports = {
   apps: [
     {
       name: "user-service",
+      cwd: "/home/ruwan/swiftcart-backend-services",
       script: "java",
       args: "-Dspring.classformat.ignore=true -Deureka.client.serviceUrl.defaultZone=http://10.0.1.8:8761/eureka/ -Deureka.instance.prefer-ip-address=true -jar user-service/target/user-service-1.0.0-SNAPSHOT.jar",
       autorestart: true,
@@ -14,6 +15,7 @@ module.exports = {
     },
     {
       name: "product-service",
+      cwd: "/home/ruwan/swiftcart-backend-services",
       script: "java",
       args: "-Dspring.classformat.ignore=true -Deureka.client.serviceUrl.defaultZone=http://10.0.1.8:8761/eureka/ -Deureka.instance.prefer-ip-address=true -jar product-service/target/product-service-1.0.0-SNAPSHOT.jar",
       autorestart: true,
@@ -26,6 +28,7 @@ module.exports = {
     },
     {
       name: "order-service",
+      cwd: "/home/ruwan/swiftcart-backend-services",
       script: "java",
       args: "-Dspring.classformat.ignore=true -Deureka.client.serviceUrl.defaultZone=http://10.0.1.8:8761/eureka/ -Deureka.instance.prefer-ip-address=true -jar order-service/target/order-service-1.0.0-SNAPSHOT.jar",
       autorestart: true,
